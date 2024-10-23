@@ -1,0 +1,13 @@
+Function name,Inputs,Exceptions
+read_ratings_data,{'f': 'no_such_file.csv'},FileNotFoundError: [Errno 2] No such file or directory:'no_such_file.csv'
+read_book_author,{'f': 'Books_modified.csv'},KeyError: 'ISBN'
+create_author_dict,{'f': 12345},OSError: [Errno 9] Bad file descriptor
+calculate_average_rating,{'f': 'Ratings_modified.csv'},ValueError: invalid literal for int() with base 10: '1e9'
+get_popular_books,{book_to_average_dict: 1234},AttributeError: 'int' object has no attribute 'items'
+filter_books,{book_to_average_dict: {"1234567890": "Bad"}},TypeError: '>=' not supported between instances of 'str' and 'float'
+get_popular_by_author,{'author': "Author"},TypeError: get_popular_by_author() missing 2 required positional arguments: 'author_to_books_dict' and 'book_to_average_dict'
+get_author_rating,{'author': "Author"},TypeError: get_author_rating() missing 2 required positional arguments: 'author_to_books_dict' and 'book_to_average_dict'
+author_popularity,{'author': "Author"},TypeError: get_author_rating() missing 2 required positional arguments: 'author_to_books_dict' and 'book_to_average_dict'
+read_user_ratings,{'f': 1234},OSError: [Errno 9] Bad file descriptor
+get_user_top_author,{'author': "Author"},TypeError: get_user_top_author() missing 2 required positional arguments: 'user_to_book_ratings_dict' and 'book_author_dict'
+recommend_books,{},NameError: name 'recommend_books' is not defined
