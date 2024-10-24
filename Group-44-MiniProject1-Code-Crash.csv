@@ -3,11 +3,11 @@ read_ratings_data,{'f': 'no_such_file.csv'},FileNotFoundError: [Errno 2] No such
 read_book_author,{'f': 'Books_modified.csv'},KeyError: 'ISBN'
 create_author_dict,{'f': 12345},OSError: [Errno 9] Bad file descriptor
 calculate_average_rating,{'f': 'Ratings_modified.csv'},ValueError: invalid literal for int() with base 10: '1e9'
-get_popular_books,{book_to_average_dict: 1234},AttributeError: 'int' object has no attribute 'items'
-filter_books,{book_to_average_dict: {"1234567890": "Bad"}},TypeError: '>=' not supported between instances of 'str' and 'float'
-get_popular_by_author,"{'author': 1, author_to_books_dict : 1, book_to_average_dict : 1}",AttributeError: 'int' object has no attribute 'get'
-get_author_rating,"{'author': 1, author_to_books_dict : 1, book_to_average_dict : 1}",AttributeError: 'float' object has no attribute 'get'
-author_popularity,"{author_to_books_dict: (), book_to_average_dict:(), n:()}",TypeError: slice indices must be integers or None or have an __index__ method
+get_popular_books,{'book_to_average_dict': 1234},AttributeError: 'int' object has no attribute 'items'
+filter_books,{'book_to_average_dict': {"1234567890": "Bad"}},TypeError: '>=' not supported between instances of 'str' and 'float'
+get_popular_by_author,"{'author': 1, 'author_to_books_dict': 1, 'book_to_average_dict': 1}",AttributeError: 'int' object has no attribute 'get'
+get_author_rating,"{'author': 1, 'author_to_books_dict': 1, 'book_to_average_dict': 1}",AttributeError: 'float' object has no attribute 'get'
+author_popularity,"{'author_to_books_dict': (), 'book_to_average_dict':(), 'n':()}",TypeError: slice indices must be integers or None or have an __index__ method
 read_user_ratings,{'f': 1234},OSError: [Errno 9] Bad file descriptor
-get_user_top_author,"{user_ID: True, user_to_book_ratings_dict: True, book_author_dict: True}",TypeError: argument of type 'bool' is not iterable
+get_user_top_author,"{'user_ID': True, 'user_to_book_ratings_dict': True, 'book_author_dict': True}",TypeError: argument of type 'bool' is not iterable
 recommend_books,,NameError: name 'recommend_books' is not defined
