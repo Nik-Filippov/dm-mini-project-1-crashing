@@ -1,9 +1,9 @@
 Division of labor:
-- Nikita Filippov (nf319)
+- Suchi Borkar (sb2431)
     - Exceptions 1-4
 
-- Suchi Borkar ()
+- Nikita Filippov (nf319)
     - Exceptions 5-8
 
-- Sean Tom ()
+- Sean Tom (st1061)
     - Exceptions 9-12
